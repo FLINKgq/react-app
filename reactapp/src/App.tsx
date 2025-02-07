@@ -1,16 +1,14 @@
+import { Outlet } from 'react-router-dom';
 import './App.css'
-
-import { BrowserRouter, NavLink, Outlet } from 'react-router-dom';
-import React from 'react';
-
+import Pattern from './components/pattern/pattern'
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className='pattern'>
+      <Pattern />
       <Outlet />
     </div>
-  );
+  )
 }
 
 export default App;
